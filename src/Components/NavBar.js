@@ -46,13 +46,13 @@ export function NavBar() {
 				</Flex>
 				<Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
 					<Link href={'/'}>
-						<Text
-							textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-							fontFamily={'heading'}
-							color={useColorModeValue('gray.800', 'white')}
-						>
-							Hackley STEM Club
-						</Text>
+                        <Text
+                            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+                            fontFamily={'heading'}
+                            color={useColorModeValue('gray.800', 'white')}
+                        >
+                            Hackley STEM Club
+                        </Text>
 					</Link>
 
 					<Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -222,7 +222,7 @@ const NAV_ITEMS = [
 			{
 				label: 'Special Relativity',
 				subLabel: 'e=mc^2',
-				href: '#',
+				href: '/physics/SRel',
 			},
 		],
 	},
