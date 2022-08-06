@@ -1,4 +1,4 @@
-import { Container, Flex, Heading, HStack, Image, Stack, Text } from '@chakra-ui/react';
+import { Heading, Stack, Text } from '@chakra-ui/react';
 import { NavBar } from '../../Components/NavBar';
 
 export function NumberTheory() {
