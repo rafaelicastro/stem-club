@@ -232,7 +232,7 @@ const NAV_ITEMS = [
 			{
 				label: 'Number Theory',
 				subLabel: 'Hard questions made easy',
-				href: '#',
+				href: '/math/numtheory',
 			},
 		],
 	},
