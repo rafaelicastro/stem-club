@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/stem-club/static/js/main.a553fd9d.js",
+    "main.js": "/stem-club/static/js/main.7d8300ad.js",
     "static/media/logo.png": "/stem-club/static/media/logo.d87209a11b1bdf4c2b39.png",
     "index.html": "/stem-club/index.html",
-    "main.a553fd9d.js.map": "/stem-club/static/js/main.a553fd9d.js.map"
+    "main.7d8300ad.js.map": "/stem-club/static/js/main.7d8300ad.js.map"
   },
   "entrypoints": [
-    "static/js/main.a553fd9d.js"
+    "static/js/main.7d8300ad.js"
   ]
 }
