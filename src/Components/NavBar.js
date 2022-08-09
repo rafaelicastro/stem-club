@@ -222,7 +222,7 @@ const NAV_ITEMS = [
 			{
 				label: 'Special Relativity',
 				subLabel: 'e=mc^2',
-				href: '/stem-club/physics/SRel',
+				href: '/srel',
 			},
 		],
 	},
@@ -232,7 +232,7 @@ const NAV_ITEMS = [
 			{
 				label: 'Number Theory',
 				subLabel: 'Hard questions made easy',
-				href: '/stem-club/math/numtheory',
+				href: '/numtheory',
 			},
 		],
 	},
