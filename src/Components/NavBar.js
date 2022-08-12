@@ -246,8 +246,18 @@ const NAV_ITEMS = [
 		],
 	},
 	{
+		label: 'Computer Science',
+		children: [
+			{
+				label: 'Manim',
+				subLabel: 'Mathematical animations',
+				href: '/manim',
+			},
+		],
+	},
+	{
 		label: 'About',
-		href: '#',
+		href: '/about',
 	},
 
 ];

@@ -1,7 +1,7 @@
 import ReactGoogleSlides from "react-google-slides";
 import { VStack, Text } from '@chakra-ui/react';
 
-export function Slide({number, desc, link}) {
+export function Slide({title, desc, link}) {
     return (
         <>
             <VStack spacing={"15px"} align={"center"}>
@@ -10,8 +10,9 @@ export function Slide({number, desc, link}) {
                     fontWeight={600} // TODO decide on weight
                     fontSize={25}
                     lineHeight={'110%'}
+                    align={'center'}
                 >
-                    Slide {number}
+                    {title}
                 </Text>
                 <Text
                     style={{flexShrink: 1}}
