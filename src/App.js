@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home } from './Pages/Home.js';
+import { Home } from './Pages/Home';
 import { SRel } from './Pages/Physics/SRel';
 import { NumberTheory } from './Pages/Math/NumberTheory';
 

@@ -15,6 +15,7 @@ import {
 	useColorModeValue,
 	useDisclosure,
 } from '@chakra-ui/react';
+import { Link as RouterLink } from 'react-router-dom';
 
 export function NavBar() {
 	const { isOpen, onToggle } = useDisclosure();
@@ -45,7 +46,7 @@ export function NavBar() {
 					/>
 				</Flex>
 				<Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-					<Link href={'/'}>
+					<RouterLink to={'/'}>
                         <Text
                             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
                             fontFamily={'heading'}
@@ -53,7 +54,7 @@ export function NavBar() {
                         >
                             Hackley STEM Club
                         </Text>
-					</Link>
+					</RouterLink>
 
 					<Flex display={{ base: 'none', md: 'flex' }} ml={10}>
 						<DesktopNav />
@@ -80,19 +81,22 @@ const DesktopNav = () => {
 				<Box key={navItem.label}>
 					<Popover trigger={'hover'} placement={'bottom-start'}>
 						<PopoverTrigger>
-							<Link
-								p={2}
-								href={navItem.href ?? '#'}
+							<RouterLink
+								to={navItem.href ?? '#'}
 								fontSize={'sm'}
 								fontWeight={500}
 								color={linkColor}
-								_hover={{
-									textDecoration: 'none',
-									color: linkHoverColor,
-								}}
 							>
-								{navItem.label}
-							</Link>
+								<Text
+									px={2}
+									_hover={{
+										textDecoration: 'none',
+										color: linkHoverColor,
+									}}
+								>
+									{navItem.label}
+								</Text>
+							</RouterLink>
 						</PopoverTrigger>
 
 						{navItem.children && (
@@ -120,15 +124,17 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }) => {
 	return (
-		<Link
-			href={href}
-			role={'group'}
-			display={'block'}
-			p={2}
-			rounded={'md'}
-			_hover={{ bg: useColorModeValue('blue.50', 'gray.900') }}
+		<RouterLink
+			to={href}
 		>
-			<Stack direction={'row'} align={'center'}>
+			<Stack
+				display={'block'}
+				p={2}
+				rounded={'md'}
+				role={'group'}
+				_hover={{ bg: useColorModeValue('blue.50', 'gray.900') }}
+			><Stack direction={'row'} align={'center'}>
+			
 				<Box>
 					<Text
 						transition={'all .3s ease'}
@@ -150,8 +156,8 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 				>
 					<Icon color={'blue.400'} w={5} h={5} as={ChevronRightIcon} />
 				</Flex>
-			</Stack>
-		</Link>
+			</Stack></Stack>
+		</RouterLink>
 	);
 };
 
@@ -205,9 +211,12 @@ const MobileNavItem = ({ label, children, href }) => {
 				>
 					{children &&
 						children.map((child) => (
-							<Link key={child.label} py={2} href={child.href}>
-								{child.label}
-							</Link>
+							<RouterLink
+								key={child.label}
+								to={child.href}
+							>
+								<Text py={2}> {child.label} </Text>
+							</RouterLink>
 						))}
 				</Stack>
 			</Collapse>
@@ -221,7 +230,7 @@ const NAV_ITEMS = [
 		children: [
 			{
 				label: 'Special Relativity',
-				subLabel: 'e=mc^2',
+				subLabel: 'E = mc^2',
 				href: '/srel',
 			},
 		],
