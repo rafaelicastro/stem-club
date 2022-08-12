@@ -52,7 +52,7 @@ export function NavBar() {
                             fontFamily={'heading'}
                             color={useColorModeValue('gray.800', 'white')}
                         >
-                            Hackley STEM Club
+                            Hackley STEM
                         </Text>
 					</RouterLink>
 

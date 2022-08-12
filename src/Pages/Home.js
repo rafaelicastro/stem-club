@@ -22,15 +22,15 @@ export function Home() {
 						<Text as={'span'} color={'yellow.400'}>
 							STEM
 						</Text>
-                        {' '}Club
 					</Heading>
                     <Flex w={'300px'}>
 						<Image src={Logo}></Image>
 					</Flex>
 					<Text color={'gray.500'} maxW={'3xl'}>
-						Hackley STEM Club is run by Rafael Castro and Jimmy Mulosmani at Hackley, and meets once every eight days.
-						To learn more about us and how to properly utilize this club,
-						click on the 'about' section at the top, or dive straight into our collection of slideshows about ANYTHING in STEM.
+						Hackley STEM is run by Rafael Castro and Jimmy Mulosmani, and will meet once every eight days.
+						To learn more about us and how to properly utilize this club or to request a presentation,
+						click on the 'about' section at the top, or dive straight into our collection of slideshows
+						about anything in STEM.
 					</Text>
 				</Stack>
 			</Container>

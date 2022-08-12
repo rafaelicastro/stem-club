@@ -5,11 +5,13 @@
   "private": false,
   "dependencies": {
     "@chakra-ui/react": "^2.2.6",
+    "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "emailjs": "^4.0.0",
     "framer-motion": "^6.5.1",
     "nth-check": "^2.1.1",
     "react": "^18.2.0",
