@@ -12,36 +12,41 @@ import {
     Textarea as TextArea // just feels wrong lmao
 } from '@chakra-ui/react';
 import { NavBar } from '../../Components/NavBar';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 export function About() {
 
-    const [name, setName] = useState();
+    const [name, setName] = useState("");
     const handleNameChange = (event) => setName(event.target.value);
 
-    const [link, setLink] = useState();
+    const [link, setLink] = useState("");
     const handleLinkChange = (event) => setLink(event.target.value);
 
-    const [date, setDate] = useState();
+    const [date, setDate] = useState("");
     const handleDateChange = (event) => setDate(event.target.value);
 
-    const [note, setNote] = useState();
+    const [note, setNote] = useState("");
     const handleNoteChange = (event) => setNote(event.target.value);
 
+    const form = useRef();
+
     function submit() {
-        let message = 'HACKLEY STEM PRESENTATION REQUEST\n\n'
-        message += 'name: ' + name
-        message += '\nlink: ' + link
-        message += '\ndate: ' + date
-        message += '\nnote:\n' + note
-        console.log(message)
-        emailjs.sendForm('default_service', 'template_ougiqcs', this, 'gFDUoGOP94bss27mZ')
+
+        const templateParams = {
+            name: name,
+            link: link,
+            date: date,
+            note: note,
+        }
+
+        emailjs.send('default_service', 'template_ougiqcs', templateParams, 'gFDUoGOP94bss27mZ')
             .then(() => {
-                alert('Sent!');
+                alert('Sent! Your presentation will be reviewed within the next 24 hours.');
             }, (err) => {
                 alert(JSON.stringify(err));
-            });
+            }); 
+
     }
 
 	return (
@@ -73,26 +78,41 @@ export function About() {
                         students from other schools who are interested in STEM to look at our website, as all the presentations
                         will be on here.
 					</Text>
-                    <FormControl>
+                    <FormControl ref={form}>
                         <FormLabel>Name</FormLabel>
-                        <Input type={'text'} value={name} onChange={handleNameChange}/>
+                        <Input
+                            type={'text'}
+                            value={name}
+                            onChange={handleNameChange}
+                            className={'name'}
+                        />
                         <br /> <br />
                         <FormLabel>Presentation Link</FormLabel>
-                        <Input type={'url'} value={link} onChange={handleLinkChange}/>
+                        <Input
+                            type={'url'}
+                            value={link}
+                            onChange={handleLinkChange}
+                            className={'link'}
+                        />
                         <FormHelperText>Make sure it's public.</FormHelperText>
                         <br />
                         <FormLabel>(Intended) date of presentation</FormLabel>
-                        <Input type={'date'} value={date} onChange={handleDateChange}/>
+                        <Input
+                            type={'date'}
+                            value={date}
+                            onChange={handleDateChange}
+                            className={'date'}
+                        />
                         <br /> <br />
                         <FormLabel>Additional Notes</FormLabel>
                         <InputGroup>
-                            <TextArea value={note} onChange={handleNoteChange} />
+                            <TextArea value={note} onChange={handleNoteChange} className={'note'}/>
                         </InputGroup>
                         <Button
                             type={'submit'}
                             mt={7}
                             colorScheme={'yellow'}
-                            // onClick={submit}
+                            onClick={submit}
                         >
                             Submit
                         </Button>
