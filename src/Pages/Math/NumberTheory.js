@@ -23,9 +23,10 @@ export function NumberTheory() {
                     </Heading>
 
                     <VStack align={"center"} spacing={150}>
-                        <Slide title={1} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." link="https://docs.google.com/presentation/d/1-IyBCMHnuoH5M5hNzZ37sQEvxT7PM4VyMORxeNNMQHo/edit#slide=id.p"/>
-                        <Slide title={1} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." link="https://docs.google.com/presentation/d/1-IyBCMHnuoH5M5hNzZ37sQEvxT7PM4VyMORxeNNMQHo/edit#slide=id.p"/>
-                        <Slide title={1} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." link="https://docs.google.com/presentation/d/1-IyBCMHnuoH5M5hNzZ37sQEvxT7PM4VyMORxeNNMQHo/edit#slide=id.p"/>
+                        <Slide
+                            title="Triangular Numbers"
+                            desc="The sum of all integers from 1 to n, triangular numbers are a quintessential mathematical tool, and also just pretty cool. In this presentation, learn how to use & derive triangular numbers, along with tetrahedral numbers."
+                            link="https://docs.google.com/presentation/d/1Ch1U65ePzzeeWppGdqe5G3SPwGC3x81uNvkPE0xitMQ/edit#slide=id.g145e6e02281_1_65"/>
                     </VStack>
 				</Stack>
 			</Container>

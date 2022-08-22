@@ -23,7 +23,11 @@ export function Manim() {
                 </Heading>
 
                     <VStack align={"center"} spacing={150}>
-                        <Slide title={"An introduction to mathematical animations"} desc="Popularized by famous math YouTuber 3Blue1Brown, Manim is a python library designed to help people create their own mathematical animations, similar to his own videos. In this presentation, learn how to begin using Manim for your animations." link="https://docs.google.com/presentation/d/1QROK1gFemeVfRaSNJlKfOCYxtuLiw3XJ/edit#slide=id.p1"/>
+                        <Slide
+                            title={"An introduction to mathematical animations"}
+                            desc="Popularized by famous math YouTuber 3Blue1Brown, Manim is a python library designed to help people create their own mathematical animations, similar to his own videos. In this presentation, learn how to begin using Manim for your animations."
+                            link="https://docs.google.com/presentation/d/1QROK1gFemeVfRaSNJlKfOCYxtuLiw3XJ/edit#slide=id.p1"
+                        />
                     </VStack>
 				</Stack>
 			</Container>

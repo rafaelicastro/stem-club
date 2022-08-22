@@ -23,9 +23,10 @@ export function SRel() {
                     </Heading>
 
                     <VStack align={"center"} spacing={150}>
-                        <Slide title={1} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." link="https://docs.google.com/presentation/d/1-IyBCMHnuoH5M5hNzZ37sQEvxT7PM4VyMORxeNNMQHo/edit#slide=id.p"/>
-                        <Slide title={1} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." link="https://docs.google.com/presentation/d/1-IyBCMHnuoH5M5hNzZ37sQEvxT7PM4VyMORxeNNMQHo/edit#slide=id.p"/>
-                        <Slide title={1} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." link="https://docs.google.com/presentation/d/1-IyBCMHnuoH5M5hNzZ37sQEvxT7PM4VyMORxeNNMQHo/edit#slide=id.p"/>
+                        <Slide
+							title="SR: An Introduction"
+							desc="Ever wonder where E=mc^2 comes from? In this presentation, you'll learn about some of the most drastic effects (such as time dilation & length contraction) SR has, why they exist, and some of the history behind it, as well."
+							link="https://docs.google.com/presentation/d/1UJjmQE2EFdPmBXB0mcg3lJXOzkCzkjDU/edit?usp=sharing&ouid=101258490025201476859&rtpof=true&sd=true"/>
                     </VStack>
 				</Stack>
 			</Container>
