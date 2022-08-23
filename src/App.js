@@ -3,6 +3,7 @@ import { Home } from './Pages/Home';
 import { SRel } from './Pages/Physics/SRel';
 import { NumberTheory } from './Pages/Math/NumberTheory';
 import { Manim } from './Pages/CompSci/Manim';
+import { NeuralNetworks } from './Pages/CompSci/NeuralNetworks';
 import { About } from './Pages/About/About';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/srel" element={<SRel />} />
         <Route path="/numtheory" element={<NumberTheory />} />
         <Route path="/manim" element={<Manim />} />
+        <Route path="/nnetworks" element={<NeuralNetworks />} />
         <Route path="/about" element={<About />} />
       </Routes>
   );

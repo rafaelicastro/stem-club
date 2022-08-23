@@ -252,6 +252,11 @@ const NAV_ITEMS = [
 				subLabel: 'Mathematical animations',
 				href: '/manim',
 			},
+			{
+				label: 'Neural Networks',
+				subLabel: 'The basis of AI',
+				href: '/nnetworks'
+			},
 		],
 	},
 	{
