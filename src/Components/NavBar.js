@@ -242,6 +242,11 @@ const NAV_ITEMS = [
 				subLabel: 'Hard questions made easy',
 				href: '/numtheory',
 			},
+			{
+				label: 'AMC',
+				subLabel: 'Competitive math prep',
+				href: '/amc',
+			},
 		],
 	},
 	{
