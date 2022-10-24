@@ -24,7 +24,7 @@ export function AMC() {
 
                     <VStack align={"center"} spacing={150}>
                         <Slide
-                            title="Triangular Numbers"
+                            title="AMC Prep"
                             desc="The AMC can be pretty scary, especially when you don't know how it works or what type of questions will be on it. In this presentation, learn exactly that, and preview some questions given on past exams!"
                             link="https://docs.google.com/presentation/d/1B0O21li_asT1Hr7upeGeKcoVfboZcSOh8qcy4bsoBZc/edit#slide=id.p"/>
                     </VStack>
