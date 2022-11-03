@@ -22,8 +22,8 @@ export function NavBar() {
 	return (
 		<Box>
 			<Flex
-				bg={useColorModeValue('white', 'gray.800')}
-				color={useColorModeValue('gray.600', 'white')}
+				bg={useColorModeValue('black', 'gray.800')}
+				color={useColorModeValue('white', 'white')}
 				minH={'60px'}
 				py={{ base: 2 }}
 				px={{ base: 4 }}
@@ -49,7 +49,8 @@ export function NavBar() {
                         <Text
                             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
                             fontFamily={'heading'}
-                            color={useColorModeValue('gray.800', 'white')}
+                            color={useColorModeValue('yellow.400', 'white')}
+							fontStyle={'bold'}
                         >
                             Hackley STEM
                         </Text>
@@ -71,8 +72,8 @@ export function NavBar() {
 
 const DesktopNav = () => {
 	const linkColor = useColorModeValue('gray.600', 'gray.200');
-	const linkHoverColor = useColorModeValue('gray.800', 'white');
-	const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+	const linkHoverColor = useColorModeValue('blue.400', 'white');
+	const popoverContentBgColor = useColorModeValue('white', 'white');
 
 	return (
 		<Stack direction={'row'} spacing={4}>
@@ -131,7 +132,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 				p={2}
 				rounded={'md'}
 				role={'group'}
-				_hover={{ bg: useColorModeValue('blue.50', 'gray.900') }}
+				_hover={{ bg: useColorModeValue('blue.40', 'gray.900') }}
 			><Stack direction={'row'} align={'center'}>
 			
 				<Box>
@@ -139,10 +140,11 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 						transition={'all .3s ease'}
 						_groupHover={{ color: 'blue.400' }}
 						fontWeight={500}
+						color={'black'}
 					>
 						{label}
 					</Text>
-					<Text fontSize={'sm'}>{subLabel}</Text>
+					<Text fontSize={'sm'} color={'black'}>{subLabel}</Text>
 				</Box>
 				<Flex
 					transition={'all .3s ease'}
