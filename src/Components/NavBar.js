@@ -267,6 +267,16 @@ const NAV_ITEMS = [
 		],
 	},
 	{
+		label: 'Biology',
+		children: [
+			{
+				label: 'Immunology',
+				subLabel: 'Natural defense system',
+				href: '/immuno',
+			},
+		],
+	},
+	{
 		label: 'Projects',
 		href: '/projects',
 	},

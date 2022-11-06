@@ -5,6 +5,7 @@ import { NumberTheory } from './Pages/Math/NumberTheory';
 import { AMC } from './Pages/Math/AMC';
 import { Manim } from './Pages/CompSci/Manim';
 import { NeuralNetworks } from './Pages/CompSci/NeuralNetworks';
+import { Immunology } from './Pages/Biology/Immunology';
 import { About } from './Pages/About/About';
 import { Projects } from './Pages/Projects';
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/amc" element={<AMC />} />
         <Route path="/manim" element={<Manim />} />
         <Route path="/nnetworks" element={<NeuralNetworks />} />
+        <Route path="/immuno" element={<Immunology />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
       </Routes>
