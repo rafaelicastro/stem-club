@@ -33,6 +33,11 @@ export function Projects() {
                             desc="Change the velocity of a reference frame to see how the axes of a spacetime graph are affected! This is accomplished using the Lorentz Transformations, a critical part of Special Relativity."
                             link="https://www.desmos.com/calculator/6euyxwvna4?embed"
                         />
+                        <Desmos
+                            title="Happy Thanksgiving!"
+                            desc="Enjoy the graph art -- happy Thanksgiving to everyone!"
+                            link="https://www.desmos.com/calculator/1hwt04vmcl?embed"
+                        />
                     </VStack>
 				</Stack>
 			</Container>
