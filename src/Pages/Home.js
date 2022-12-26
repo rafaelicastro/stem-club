@@ -92,7 +92,7 @@ export function Home() {
 							click 'Learn More', or dive straight into our collection of slideshows
 							about anything in STEM.
 						</Text>
-						<HStack spacing={"20%"}>
+						<HStack spacing={10}>
 							<RouterLink to={'/about'}>
 								<Button bg={'#f3d503'} leftIcon={<InfoIcon />}>Learn More</Button>
 							</RouterLink>
