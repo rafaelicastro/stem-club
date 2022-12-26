@@ -70,7 +70,7 @@ export function About() {
 						Hackley STEM is a space to be able to share ideas in STEM that aren't traditionally gone over in the school system.
                         Members (at Hackley School) will prepare presentations, and email them (preferrably using the form below)
                         to Rafael Castro at rcastro@students.hackleyschool.org at least 24 hours before their presentation.
-                        Students may present during the allotted club time.
+                        Students may present during the allotted club time (12:00 in S118).
                         <br />
                         <br />
                         A goal that Hackley STEM is trying to accomplish is to increase the amount that students know about
