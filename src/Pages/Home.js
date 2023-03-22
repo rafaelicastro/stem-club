@@ -1,4 +1,17 @@
-import { AspectRatio, Button, Container, Flex, Heading, Highlight, HStack, Image, Grid, Link, Stack, Text } from '@chakra-ui/react';
+import {
+	AspectRatio,
+	Button,
+	Container,
+	Flex,
+	Heading,
+	Highlight,
+	HStack,
+	Image,
+	Grid,
+	Link,
+	Stack,
+	Text
+} from '@chakra-ui/react';
 import { EmailIcon, InfoIcon } from '@chakra-ui/icons';
 import { NavBar } from '../Components/NavBar';
 import Logo from '../Images/logo.png';

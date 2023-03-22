@@ -245,8 +245,8 @@ const NAV_ITEMS = [
 				href: '/numtheory',
 			},
 			{
-				label: 'AMC',
-				subLabel: 'Competitive math prep',
+				label: 'Competitive Math',
+				subLabel: 'Look at some practice questions',
 				href: '/amc',
 			},
 		],
