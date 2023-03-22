@@ -20,10 +20,10 @@ export function AMC() {
                         lineHeight={'110%'}
                     >
                         <Highlight
-								query='AMC'
+								query='Competitive Math'
 								styles={{ px: '5', py: '2', rounded: 'full', bg: 'blue.400' }}
 						>
-								AMC
+								Competitive Math
 						</Highlight>
                     </Heading>
 
